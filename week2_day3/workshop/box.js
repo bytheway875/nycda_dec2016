@@ -1,9 +1,4 @@
-var boxes = document.querySelectorAll('.box')
-var randomIndex = Math.floor(Math.random() * boxes.length);
-var randomBox = boxes[randomIndex];
 
-randomBox.style.backgroundColor = "red";
-console.log(boxes[randomIndex]);
 
 
 function changeToRed(){
