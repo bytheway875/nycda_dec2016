@@ -27,9 +27,17 @@ $(document).ready(function(){
 
 	}
 
+	// This is an example of how a function can take another function as an argument. You pass the NAME of the function (or an anonymous function) as the argument, and then the function is executed in the body.
 	function functionExecutor(functionName){
 		return functionName();
 	}
+
+	// This simply calls appendNewPost()
+	functionExecutor(appendNewPost);
+
+	// We pass an anonymous function as the argument, and functionExecutor will execute it.
+	functionExecutor(function(){ alert("hi") });
+
 });
 
 
