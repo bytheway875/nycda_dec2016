@@ -1,0 +1,10 @@
+Light It Up Workshop
+
+To practice some of the concepts we've learned today, let's create a simple app.
+
+Create a 3x3 grid using html and css. When the user clicks a button somewhere on
+your page, it should randomly select one of the boxes and change its color to red!
+
+
+This will include many of the concepts that we went over today and yesterday
+regarding DOM manipulation and events!
