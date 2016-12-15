@@ -13,17 +13,26 @@ $(document).ready(function(){
 	var liveCollection = document.getElementsByClassName("post");
 	console.log(liveCollection.length) // 6
 
+	var jqueryCollection = $(".post");
+	console.log(jqueryCollection.length)
+
 	function appendNewPost(){
+		// Native JS Append element to DOM
 		var postsContainer = document.getElementById("container");
 
 		var newPost = document.createElement("div");
 	  newPost.className = "post";
-	  newPost.appendChild(document.createTextNode("A New Post"));
+	  newPost.appendChild(document.createTextNode("A New Post With Native JS"));
 
 		postsContainer.appendChild(newPost);
 
+		// JQuery append element to DOM
+		$("#container").append("<div>A New Post With JQuery</div>");
+
 		console.log(staticCollection.length) //6
-		console.log(liveCollection.length) // 7
+		console.log(liveCollection.length) // 8
+		console.log(jqueryCollection.length) // 6! $() produces a static collection.
+		console.log($(".post").length) // 8! You should query again to include new items in jQuery.
 
 	}
 
