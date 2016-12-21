@@ -117,6 +117,7 @@ Fish.prototype.swim = function(){
   return "I am a fish so I swim";
 }
 
+
 var myFirstFish = new Fish("Goldfish", "gold", 4);
 
 // Remember: methods written on the parent's constructor MUST be overwritten on the child's constructor.
