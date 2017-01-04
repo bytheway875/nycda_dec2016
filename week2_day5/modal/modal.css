@@ -1,0 +1,8 @@
+@font-face {
+    font-family: starWars;
+    src: url(starwars.ttf);
+}
+
+.star-wars-name {
+  font-family: starWars;
+}
