@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function(){
   cookieDOM('chip');
   cookieDOM('sugar');

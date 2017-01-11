@@ -28,8 +28,6 @@ puts me2
 puts me[:name]
 puts me3['name']
 
-
-
 holidays = ['xmas', 'halloween']
 holidays_and_dates = { holidays[0] => 'dec 25', holidays[1] => 'oct 31' }
 
