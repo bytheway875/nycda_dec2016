@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Sinatra App</title>
+  </head>
+
+  <body style="background-color: <%= params[:color] %>">
+    <%= yield %>
+
+    <%= params.inspect %>
+  </body>
+</html>
