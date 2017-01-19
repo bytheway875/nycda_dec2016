@@ -1,0 +1,32 @@
+<form method="POST" action="/books">
+  <label>Title</label>
+  <input name="title">
+  <br>
+  <label>Author</label>
+  <input name="author">
+  <br>
+  <label>Year Published</label>
+  <input name="year_published">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th> Title</th>
+      <th> Author</th>
+      <th> Year Published</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.author %></td>
+        <td><%= book.year_published %></td>
+      </tr>
+    <% end %>
+  </tbody
+</table>
